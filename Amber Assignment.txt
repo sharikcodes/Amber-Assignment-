@@ -12,14 +12,14 @@ group by department_id;
 
 Ans No. 3 
 
-select e.department ID from employee
-Join salary AS s on e.employee ID = s.employee ID
+select e.department_id from employee
+Join salary AS s on e.employee_id = s.employee_id
 where salary > 5500.00;
 
 Ans No.4 
 
 Select name from emplpyee
-where Hire_date > '2022-03-01';
+where hire_date > '2022-03-01';
 
 Ans No.5 
 
