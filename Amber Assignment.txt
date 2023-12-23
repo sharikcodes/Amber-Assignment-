@@ -1,0 +1,34 @@
+﻿All Answers are here
+
+
+Ans No.1 
+
+Select name, COALESCE(department_id, 'Unassigned') AS Department_Name From employee;
+
+Ans No.2 
+
+Select Count(employee_id) AS Total Number of Employee from employee
+group by department_id;
+
+Ans No. 3 
+
+select e.department ID from employee
+Join salary AS s on e.employee ID = s.employee ID
+where salary > 5500.00;
+
+Ans No.4 
+
+Select name from emplpyee
+where Hire_date > '2022-03-01';
+
+Ans No.5 
+
+Select E.employee_ID, 
+E.Name as employee_name, 
+S.salary, S.effective_Date, 
+AvVGS.Salary) Over
+(Partition By E.employee_ID) as Average_Salary, S.salary - AVG(S.salary)
+
+over (Partition BY E.employee_ID) AS Salary_Difference from employee E 
+Join 
+salary S On E.employee_id = S.employee_id;
